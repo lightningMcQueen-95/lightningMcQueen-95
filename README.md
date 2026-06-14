@@ -216,25 +216,6 @@ class Anant:
 
 ---
 
-## Current Objectives
-
-```bash
-$ cat roadmap.txt
-
-▸ SHIPPING:
-  [████████████░░░]  82%   Production-grade full-stack project
-  [██████████░░░░░]  68%   Backend & system design fundamentals
-  [████████████░░░]  80%   SDE interview preparation
-  [███████████░░░░]  74%   ML applied to real-world datasets
-
-▸ NEXT UNLOCKS:
-  [ ] First SWE / SDE internship offer
-  [ ] Open-source contribution merged
-  [ ] System that handles 10k+ concurrent users
-```
-
----
-
 ## Featured Projects
 
 <div align="center">
