@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Grants permission to save the image to your repository
+      contents: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -20,3 +20,12 @@ jobs:
           card: stats
           options: username=lightningMcQueen-95&show_icons=true&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=E2E8F0&count_private=true&rank_icon=github
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p profile
+          git add profile/
+          git diff-index --quiet HEAD || git commit -m "chore: automated stats update"
+          git push origin main
