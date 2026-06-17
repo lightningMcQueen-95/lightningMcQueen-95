@@ -1,0 +1,31 @@
+name: Update GitHub Stats SVG
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs every 6 hours
+  workflow_dispatch: # Allows you to run it manually anytime
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Stats Card
+        uses: anuraghazra/github-readme-stats-action@v2
+        with:
+          username: lightningMcQueen-95
+          count_private: true
+          show_icons: true
+          disabled_animations: true
+          # Theme matching your profile
+          card_options: |
+            hide_border=true
+            bg_color=0D1117
+            title_color=A78BFA
+            icon_color=A78BFA
+            text_color=E2E8F0
+            rank_icon=github
+      
+      - name: Deploy to Repo
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
