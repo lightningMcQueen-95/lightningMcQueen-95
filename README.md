@@ -190,7 +190,7 @@ class Anant:
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=lightningMcQueen-95&show_icons=true&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=E2E8F0&count_private=true&rank_icon=github" height="175" alt="GitHub Stats"/>
+<img src="https://github-readme-stats.vercel.app/api?username=lightningMcQueen-95&show_icons=true&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=A78BFA&text_color=E2E8F0&count_private=true&rank_icon=githubcache_bust=1" height="175" alt="GitHub Stats"/>
 &nbsp;&nbsp;
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lightningMcQueen-95&layout=compact&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=E2E8F0&langs_count=8" height="175" alt="Top Languages"/>
 
